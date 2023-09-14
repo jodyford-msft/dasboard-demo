@@ -19,6 +19,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  count_files:
+      runs-on: ubuntu-latest
+  
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+  
+        - name: Set up Ruby
+          uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: '3.2' # Choose an appropriate Ruby version
+  
+        - name: Execute Ruby Script
+          run: ruby generate_file_count.rb
+  
+        - name: Commit and Push Changes
+          run: |
+            git config --global user.name 'jodyford-msft'
+            git config --global user.email 'jodyfor@microsft.com'
+            git add .
+            git commit -m "Update file count"
+            git push origin main
+  
   # Build job
   build:
     runs-on: ubuntu-latest
