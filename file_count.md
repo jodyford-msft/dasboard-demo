@@ -9,6 +9,6 @@ permalink: /
     File Count Page
   </div>
   <div class="card-content">
-    Number of files in the folder: {{ site.data.file_count }}
+    {{ site.data.file_count }}
   </div>
 </div>
