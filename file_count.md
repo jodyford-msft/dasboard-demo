@@ -1,7 +1,7 @@
 ---
 layout: default
 title: File Count Page
-permalink: /file-count/
+permalink: /
 ---
 
 # File Count Page
