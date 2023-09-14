@@ -19,7 +19,7 @@ Dir.glob(File.join(folder_path, "*")).each do |file_path|
     expert_file_count += 1
   end
 
-    if file_contents.include?(approved_phrase_to_search)
+  if file_contents.include?(approved_phrase_to_search)
       approved_file_count += 1
   end
 
