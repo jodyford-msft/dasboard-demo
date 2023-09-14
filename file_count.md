@@ -29,7 +29,7 @@ permalink: /
     <div class="basic-card basic-card-aqua">
         <div class="card-content">
             <span class="card-title">Approved Answers</span>
-            <p class="card-text">{{ site.data.approvedd_file_count }}</p>
+            <p class="card-text">{{ site.data.approved_file_count }}</p>
         </div>
 
         <div class="card-link">
