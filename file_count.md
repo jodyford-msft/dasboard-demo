@@ -3,7 +3,9 @@ layout: default
 title: File Count Page
 permalink: /
 ---
-<div class="maindiv">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 <div class="card-category-1">
     <div class="basic-card basic-card-aqua">
         <div class="card-content">
@@ -36,7 +38,6 @@ permalink: /
             <a href="#" title="Read Full"><span>Read Full</span></a>
         </div>
     </div>
-</div>
 </div>
 
 
