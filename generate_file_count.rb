@@ -1,8 +1,8 @@
 # generate_file_count.rb
 require 'yaml'
 folder_path = "_questions"
-expert_phrase_to_search = "Expert Answer"  
-approved_phrase_to_search = "Approved"  
+expert_phrase_to_search = "### Expert Answer "  
+approved_phrase_to_search = "## Approved"  
 
 # Initialize counters
 total_file_count = 0
