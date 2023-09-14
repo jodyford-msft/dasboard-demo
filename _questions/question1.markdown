@@ -49,4 +49,4 @@ Private Clusters: The standard-tier offering supports the use of private cluster
 
 By using the standard-tier offering for AKS, you can take advantage of these additional features and capabilities to ensure that your AKS cluster is highly available, resilient, and secure. For more information on the standard-tier offering for AKS, please refer to the following documentation: Azure Kubernetes Service (AKS) standard-tier offering.
 
-Approved
+## Approved
