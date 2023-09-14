@@ -38,7 +38,7 @@ jobs:
           run: |
             git config --global user.name "jodyford-msft"
             git config --global user.email "jodyfor@microsft.com"
-            git pull
+            
             git add .
             git commit -m "Update file count"
             git push origin main
