@@ -16,7 +16,7 @@ Dir.glob(File.join(folder_path, "*")).each do |file_path|
 
   # Check if the file contents contain the desired phrase
   if file_contents.include?(expert_phrase_to_search)
-    expert_file_count += 1
+      expert_file_count += 1
   end
 
   if file_contents.include?(approved_phrase_to_search)
