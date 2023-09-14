@@ -18,7 +18,7 @@ permalink: /
     <div class="basic-card basic-card-aqua">
         <div class="card-content">
             <span class="card-title">Expert Answers</span>
-            <p class="card-text">{{ site.data.expert_answered_file_count }}</p>
+            <p class="card-text">{{ site.data.expert_answered_file_count }} of {{ site.data.total_file_count }}</p>
         </div>
 
         <div class="card-link">
@@ -29,7 +29,7 @@ permalink: /
     <div class="basic-card basic-card-aqua">
         <div class="card-content">
             <span class="card-title">Approved Answers</span>
-            <p class="card-text">{{ site.data.approved_file_count }}</p>
+            <p class="card-text">{{ site.data.approved_file_count }} of {{ site.data.total_file_count }}</p>
         </div>
 
         <div class="card-link">
