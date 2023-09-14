@@ -1,0 +1,34 @@
+name: Build GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Count and update files.json
+        run: |
+          # Count the files matching your regex pattern and update files.json
+          count=$(find . -type f -name "^question\d+\.markdown$" | wc -l)
+          echo "{\"count\": $count}" > files.json
+        shell: bash
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'jodyford-msft'
+          git config --global user.email 'jodyford@microsoft.com'
+        shell: bash
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update file count"
+          git push origin gh-pages  # Push to your gh-pages branch
+        shell: bash
