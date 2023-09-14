@@ -21,6 +21,7 @@ concurrency:
 jobs:
   count:
       runs-on: ubuntu-latest
+      continue-on-error: true 
   
       steps:
         - name: Checkout Repository
