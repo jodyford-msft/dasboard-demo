@@ -6,7 +6,7 @@ file_count = Dir["folder_path/**/*"].length
 
 
 data = {
-  "file_count" => file_count
+  file_count
 }
 
 #File.write("_data/file_count.yml", data.to_yaml)
