@@ -7,7 +7,7 @@ permalink: /
 <div class="card-category-1">
     <div class="basic-card basic-card-aqua">
         <div class="card-content">
-            <span class="card-title">File Count</span>
+            <span class="card-title">Questions</span>
             <p class="card-text">
                  {{ site.data.file_count }}
             </p>
