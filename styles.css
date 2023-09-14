@@ -84,6 +84,7 @@ body {
     
     .basic-card .card-content {
         padding: 30px;
+        width: 100%;
         font-size: 35px; /* Change content font size to 35 */
         text-align: center;
     }
