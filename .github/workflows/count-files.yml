@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7 # Choose an appropriate Ruby version
+          ruby-version: '3.2' # Choose an appropriate Ruby version
 
       - name: Execute Ruby Script
         run: ruby generate_file_count.rb
