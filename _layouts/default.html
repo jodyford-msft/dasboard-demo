@@ -24,7 +24,7 @@
 
   // Function to create the stacked chart
   async function createStackedChart() {
-  var countsByCreateDate = YAML.parse({{ site.data.counts_by_create_date }});
+  var countsByCreateDate = YAML.parse({{ site.data.counts_by_create_date  | jsonify }});
   var ctx = document.getElementById('fileCreateChart').getContext('2d');
 
     // Define your chart data
