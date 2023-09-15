@@ -24,7 +24,7 @@ permalink: /
         </div>
 
         <div class="card-link">
-           Aliquam id diam maecenas ultricies mi eget mauris. Viverra tellus in hac habitasse platea. Placerat duis ultricies lacus sed turpis. Diam in arcu cursus euismod quis viverra nibh. 
+           Aliquam id diam maecenas ultricies mi eget mauris. Viverra tellus in hac habitasse platea. Placerat duis ultricies lacus sed turpis. 
         </div>
     </div>
 
@@ -42,13 +42,11 @@ permalink: /
     <div class="basic-card basic-card-dark">
     <div class="card-content">
         <span class="card-title">Questions Per Day</span>
-           <!-- Place the canvas element inside the card -->
         <div class="card-chart">
         <canvas id="fileCreateChart" width="200" height="200"></canvas>
-
         </div>
         <div class="card-link">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. 
+            Turpis egestas integer eget aliquet. Morbi tristique senectus et netus. Tempor commodo ullamcorper a lacus. Faucibus purus in massa tempor nec.
         </div>
     </div>
 </div>
