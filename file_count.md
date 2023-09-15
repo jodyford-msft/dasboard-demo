@@ -7,7 +7,7 @@ permalink: /
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="card-category-1">
-    <div class="basic-card basic-card-aqua">
+    <div class="basic-card basic-card-aqua1">
         <div class="card-content">
             <span class="card-title">Questions</span>
             <p class="card-text">{{ site.data.total_file_count }}</p>
