@@ -13,7 +13,7 @@ permalink: /
             <p class="card-text">{{ site.data.total_file_count }}</p>
         </div>
         <div class="card-link">
-            <a href="#" title="Read Full"><span>Read Full</span></a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. Fringilla ut morbi tincidunt augue. Venenatis a condimentum vitae sapien pellentesque. Arcu cursus euismod quis viverra nibh cras.
         </div>
     </div>
 
@@ -24,7 +24,7 @@ permalink: /
         </div>
 
         <div class="card-link">
-            <a href="#" title="Read Full"><span>Read Full</span></a>
+           Aliquam id diam maecenas ultricies mi eget mauris. Viverra tellus in hac habitasse platea. Placerat duis ultricies lacus sed turpis. Diam in arcu cursus euismod quis viverra nibh. 
         </div>
     </div>
 
@@ -35,7 +35,7 @@ permalink: /
         </div>
 
         <div class="card-link">
-            <a href="#" title="Read Full"><span>Read Full</span></a>
+            Turpis egestas integer eget aliquet. Morbi tristique senectus et netus. Tempor commodo ullamcorper a lacus. Faucibus purus in massa tempor nec.
         </div>
     </div>
 
@@ -48,6 +48,9 @@ permalink: /
         <script>
           var countsByCreateDate =  {{site.data.counts_by_create_date | jsonify}} ;
         </script>
+        </div>
+        <div class="card-link">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. Fringilla ut morbi tincidunt augue. Venenatis a condimentum vitae sapien pellentesque. Arcu cursus euismod quis viverra nibh cras.
         </div>
     </div>
 </div>
