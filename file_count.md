@@ -44,13 +44,14 @@ permalink: /
         <span class="card-title">Questions Per Day</span>
            <!-- Place the canvas element inside the card -->
         <div class="card-chart">
-        <canvas id="fileCreateChart" width="400" height="400"></canvas>
+        <script>
+          var countsByCreateDate = {
+            {{ site.data.counts_by_create_date }}
+          };
+        </script>
         </div>
     </div>
-    
-
 </div>
-
 </div>
 
 
