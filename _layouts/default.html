@@ -24,7 +24,7 @@
 
   // Function to create the stacked chart
   async function createStackedChart() {
-    const data = "{{counts_by_create_date.yml}}"
+    const data = "{{ site.data.counts_by_create_date }}"
 
     const ctx = document.getElementById('fileCreateChart').getContext('2d');
     new Chart(ctx, {
