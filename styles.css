@@ -153,6 +153,7 @@ h1 {
         .basic-card .card-link {
             padding: 25px;
             width: -webkit-fill-available;
+            color: white;
         }
 
             .basic-card .card-link a {
