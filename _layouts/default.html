@@ -17,7 +17,7 @@
 <script>
   // Function to fetch and parse YAML data
   async function fetchYamlData() {
-    const response = await fetch('_data/counts_by_create_date.yml');
+    const response = await fetch('{{ site.data.count_by_create_date }}');
     const yamlData = await response.text();
     return jsyaml.load(yamlData);
   }
