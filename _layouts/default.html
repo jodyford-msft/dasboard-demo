@@ -16,42 +16,66 @@
 </html>
 <script>
   // Function to fetch and parse YAML data
-  async function fetchYamlData() {
-    const response = await fetch('{{ site.data.counts_by_create_date }}');
-    const yamlData = await response.text();
-    return jsyaml.load(ymlData);
-  }
+  // async function fetchYamlData() {
+  //   const response = await fetch('{{ site.data.counts_by_create_date }}');
+  //   const yamlData = await response.text();
+  //   return jsyaml.load(ymlData);
+  // }
 
   // Function to create the stacked chart
   async function createStackedChart() {
-    const data = fetchYamlData();
+  var countsByCreateDate = YAML.parse({{ site.data.counts_by_create_date }});
+  var ctx = document.getElementById('fileCreateChart').getContext('2d');
 
-    const ctx = document.getElementById('fileCreateChart').getContext('2d');
-    new Chart(ctx, {
+    // Define your chart data
+    var chartData = {
+      labels: Object.keys(countsByCreateDate),
+      datasets: [
+        {
+          label: 'File Counts',
+          data: Object.values(countsByCreateDate),
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }
+      ]
+    };
+    
+    // Create a chart
+    var myChart = new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels: data.dates, // An array of date labels
-        datasets: [
-          {
-            label: 'Files Created',
-            data: data.counts, // An array of file counts per date
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        scales: {
-          x: {
-            stacked: true,
-          },
-          y: {
-            stacked: true,
-          },
-        },
-      },
+      data: chartData
     });
+
+      
+    // const data = fetchYamlData();
+
+    // const ctx = document.getElementById('fileCreateChart').getContext('2d');
+    // new Chart(ctx, {
+    //   type: 'bar',
+    //   data: {
+    //     labels: data.dates, // An array of date labels
+    //     datasets: [
+    //       {
+    //         label: 'Files Created',
+    //         data: data.counts, // An array of file counts per date
+    //         backgroundColor: 'rgba(75, 192, 192, 0.2)',
+    //         borderColor: 'rgba(75, 192, 192, 1)',
+    //         borderWidth: 1,
+    //       },
+    //     ],
+    //   },
+    //   options: {
+    //     scales: {
+    //       x: {
+    //         stacked: true,
+    //       },
+    //       y: {
+    //         stacked: true,
+    //       },
+    //     },
+    //   },
+    // });
   }
 
   // Call the function to create the chart when the page is ready
