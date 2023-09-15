@@ -41,7 +41,7 @@ permalink: /
     <div class="card-content">
         <span class="card-title">Questions Per Day</span>
         <div class="card-chart">
-        <canvas id="fileCreateChart" width="200" height="200"></canvas>
+        <canvas id="fileCreateChart" width="200" height="250"></canvas>
         </div>
     </div>
 </div>
