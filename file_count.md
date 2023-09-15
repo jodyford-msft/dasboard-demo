@@ -38,6 +38,19 @@ permalink: /
             <a href="#" title="Read Full"><span>Read Full</span></a>
         </div>
     </div>
+
+    <div class="basic-card basic-card-aqua">
+    <div class="card-content">
+        <span class="card-title">Questions Per Day</span>
+        <p class="card-text">{{ site.data.expert_answered_file_count }} of {{ site.data.total_file_count }}</p>
+    </div>
+    
+    <!-- Place the canvas element inside the card -->
+    <div class="card-chart">
+        <canvas id="fileCreateChart" width="400" height="400"></canvas>
+    </div>
+</div>
+
 </div>
 
 
