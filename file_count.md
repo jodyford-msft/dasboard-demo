@@ -46,7 +46,7 @@ permalink: /
         <div class="card-chart">
         <script>
           var countsByCreateDate = {
-            {{ site.data.counts_by_create_date }}
+            {{ site.data.counts_by_create_date | jsonify }}
           };
         </script>
         </div>
