@@ -43,3 +43,4 @@ File.write("_data/approved_file_count.yml", approved_file_count.to_yaml)
 # Write the counts grouped by create date to a YAML data file
 File.write("_data/counts_by_create_date.yml", counts_by_create_date.to_yaml)
 
+
