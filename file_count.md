@@ -45,7 +45,7 @@ permalink: /
            <!-- Place the canvas element inside the card -->
         <div class="card-chart">
         <script>
-          var countsByCreateDate = { {site.data.counts_by_create_date | jsonify} };
+          var countsByCreateDate = { {{site.data.counts_by_create_date | jsonify}} };
         </script>
         </div>
     </div>
