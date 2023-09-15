@@ -13,7 +13,7 @@ permalink: /
             <p class="card-text">{{ site.data.total_file_count }}</p>
         </div>
         <div class="card-link">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. Fringilla ut morbi tincidunt augue. Venenatis a condimentum vitae sapien pellentesque. Arcu cursus euismod quis viverra nibh cras.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </div>
     </div>
 
@@ -45,15 +45,16 @@ permalink: /
            <!-- Place the canvas element inside the card -->
         <div class="card-chart">
         <canvas id="fileCreateChart" width="200" height="200"></canvas>
-        <script>
-          var countsByCreateDate =  {{site.data.counts_by_create_date | jsonify}} ;
-        </script>
+
         </div>
         <div class="card-link">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. Fringilla ut morbi tincidunt augue. Venenatis a condimentum vitae sapien pellentesque. Arcu cursus euismod quis viverra nibh cras.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque. 
         </div>
     </div>
 </div>
 </div>
+<script>
+  var countsByCreateDate =  {{site.data.counts_by_create_date | jsonify}} ;
+</script>
 
 
